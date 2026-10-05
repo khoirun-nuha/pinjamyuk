@@ -1,0 +1,267 @@
+/* Fixed Layout: Disable Window Scroll */
+:root {
+    /* Light Theme Variables */
+    --bg-body: #f8f9fc;
+    --bg-card: #ffffff;
+    --text-primary: #5a5c69;
+    --text-heading: #2e2f3e;
+    --border-color: rgba(0, 0, 0, 0.1);
+}
+
+body.dark-mode {
+    /* Dark Theme Variables */
+    --bg-body: #1a1a2e;
+    --bg-card: #16213e;
+    --text-primary: #e0e0e0;
+    --text-heading: #ffffff;
+    --border-color: rgba(255, 255, 255, 0.1);
+    background-color: var(--bg-body) !important;
+    color: var(--text-primary) !important;
+}
+
+/* Global Component Overrides for Dark Mode */
+body.dark-mode .bg-white,
+body.dark-mode .bg-light,
+body.dark-mode .card:not(.bg-primary):not(.bg-success):not(.bg-warning):not(.bg-danger):not(.bg-info) {
+    background-color: var(--bg-card) !important;
+    color: var(--text-primary) !important;
+    border-color: var(--border-color) !important;
+}
+
+body.dark-mode .alert-light {
+    background-color: rgba(255, 255, 255, 0.05) !important;
+    border-color: var(--border-color) !important;
+    color: var(--text-primary) !important;
+}
+
+body.dark-mode .input-group-text {
+    background-color: rgba(0, 0, 0, 0.3) !important;
+    border-color: var(--border-color) !important;
+    color: var(--text-primary) !important;
+}
+
+/* Glass Card Dark Mode */
+body.dark-mode .glass-card {
+    background: rgba(22, 33, 62, 0.85) !important;
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3) !important;
+}
+
+/* Navbar & Dropdowns */
+body.dark-mode .navbar-theme,
+body.dark-mode .dropdown-menu {
+    background-color: var(--bg-card) !important;
+    color: var(--text-primary) !important;
+    border-color: var(--border-color) !important;
+}
+
+body.dark-mode .dropdown-item {
+    color: var(--text-primary) !important;
+}
+
+body.dark-mode .dropdown-item:hover {
+    background-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+/* Tables - Aggressive Overrides */
+body.dark-mode .table {
+    background-color: transparent !important;
+    color: var(--text-primary) !important;
+    border-color: var(--border-color) !important;
+}
+
+body.dark-mode .table> :not(caption)>*>* {
+    background-color: transparent !important;
+    /* Let row color show through */
+    color: var(--text-primary) !important;
+    border-bottom-color: var(--border-color) !important;
+}
+
+body.dark-mode .table thead th {
+    background-color: rgba(0, 0, 0, 0.3) !important;
+    color: var(--text-heading) !important;
+    border-bottom: 2px solid var(--border-color) !important;
+}
+
+body.dark-mode .table-striped>tbody>tr:nth-of-type(odd) {
+    background-color: rgba(255, 255, 255, 0.03) !important;
+}
+
+body.dark-mode .table-hover>tbody>tr:hover {
+    background-color: rgba(255, 255, 255, 0.08) !important;
+    color: #fff !important;
+}
+
+/* Text Colors */
+body.dark-mode .text-dark {
+    color: #f8f9fc !important;
+}
+
+body.dark-mode .text-muted {
+    color: rgba(255, 255, 255, 0.6) !important;
+}
+
+body.dark-mode .text-body-secondary {
+    color: rgba(255, 255, 255, 0.5) !important;
+}
+
+/* Form Inputs */
+body.dark-mode .form-control,
+body.dark-mode .form-select {
+    background-color: rgba(0, 0, 0, 0.2) !important;
+    border-color: var(--border-color) !important;
+    color: #fff !important;
+}
+
+body.dark-mode .form-control:focus,
+body.dark-mode .form-select:focus {
+    background-color: rgba(0, 0, 0, 0.3) !important;
+    border-color: #4e73df !important;
+    color: #fff !important;
+    box-shadow: 0 0 0 0.25rem rgba(78, 115, 223, 0.25);
+}
+
+body.dark-mode .form-control::placeholder {
+    color: rgba(255, 255, 255, 0.4);
+}
+
+/* Modals */
+body.dark-mode .modal-content {
+    background-color: var(--bg-card) !important;
+    border: 1px solid var(--border-color);
+}
+
+body.dark-mode .modal-header {
+    border-bottom-color: var(--border-color);
+}
+
+body.dark-mode .modal-footer {
+    border-top-color: var(--border-color);
+}
+
+body.dark-mode .btn-close {
+    filter: invert(1) grayscale(100%) brightness(200%);
+}
+
+/* SweetAlert2 Dark Mode Override */
+body.dark-mode div:where(.swal2-container) div:where(.swal2-popup) {
+    background: var(--bg-card) !important;
+    color: var(--text-primary) !important;
+}
+
+body.dark-mode div:where(.swal2-container) .swal2-title,
+body.dark-mode div:where(.swal2-container) .swal2-html-container {
+    color: var(--text-heading) !important;
+}
+
+/* DataTables Overrides */
+body.dark-mode .dataTables_wrapper .dataTables_length,
+body.dark-mode .dataTables_wrapper .dataTables_filter,
+body.dark-mode .dataTables_wrapper .dataTables_info,
+body.dark-mode .dataTables_wrapper .dataTables_processing,
+body.dark-mode .dataTables_wrapper .dataTables_paginate {
+    color: var(--text-primary) !important;
+}
+
+body.dark-mode .page-item.disabled .page-link {
+    background-color: rgba(255, 255, 255, 0.05) !important;
+    border-color: var(--border-color) !important;
+    color: rgba(255, 255, 255, 0.3) !important;
+}
+
+body.dark-mode .page-link {
+    background-color: rgba(255, 255, 255, 0.05) !important;
+    border-color: var(--border-color) !important;
+    color: #ffffff !important;
+}
+
+body.dark-mode .page-link:hover {
+    background-color: rgba(255, 255, 255, 0.15) !important;
+}
+
+body.dark-mode .page-item.active .page-link {
+    background-color: #4e73df !important;
+    border-color: #4e73df !important;
+    color: #ffffff !important;
+}
+
+/* List Groups */
+body.dark-mode .list-group-item {
+    background-color: var(--bg-card);
+    border-color: var(--border-color);
+    color: var(--text-primary);
+}
+
+/* Update existing styles to use vars where possible or just override */
+html,
+body {
+    height: 100vh;
+    overflow: hidden;
+    /* No scroll on window */
+    margin: 0;
+    padding: 0;
+    background-color: var(--bg-body);
+}
+
+/* Container adjustment - Removed global row height to fix dashboard cards */
+/* .container-fluid, .row { height: 100%; } */
+
+/* Sidebar: Fixed left */
+#sidebarMenu {
+    height: 100vh;
+    width: 250px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow-y: auto;
+    z-index: 1000;
+}
+
+/* Main Content: Independent Scroll */
+.main-content {
+    height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding: 0;
+    margin-left: 250px;
+    width: calc(100% - 250px);
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Sidebar Collapsed State */
+body.sidebar-collapsed #sidebarMenu {
+    width: 80px;
+}
+
+body.sidebar-collapsed .main-content {
+    margin-left: 80px;
+    width: calc(100% - 80px);
+}
+
+/* ... (sidebar collapsed styles omitted for brevity, keeping them unchanged if not targeted) ... */
+
+/* Main Footer Styling */
+.main-footer {
+    /* Removed margin-left as it is now inside main-content */
+    transition: all 0.3s ease;
+    padding: 1.5rem;
+    background-color: var(--bg-body);
+    border-top: 1px solid var(--border-color);
+    position: relative;
+    z-index: 10;
+    margin-top: auto;
+    /* Sticky footer */
+}
+
+/* body.sidebar-collapsed .main-footer rule is no longer needed as parent handles width */
+
+@media (max-width: 768px) {
+
+    /* Content takes full width */
+    .main-content {
+        margin-left: 0 !important;
+        width: 100% !important;
+    }
+}

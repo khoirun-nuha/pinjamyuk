@@ -1,0 +1,22 @@
+/* Profile Page Custom Styles */
+.input-group-text {
+    background-color: #f8f9fa;
+}
+
+/* Removed forced white focus to allow dark mode */
+.form-control:focus {
+    box-shadow: 0 0 0 4px rgba(13, 110, 253, 0.1);
+    border-color: #8bb9fe;
+}
+
+.letter-spacing-1 {
+    letter-spacing: 1px;
+}
+
+.scale-hover {
+    transition: transform 0.2s ease;
+}
+
+.scale-hover:hover {
+    transform: scale(1.05);
+}

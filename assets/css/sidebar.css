@@ -1,0 +1,112 @@
+/* Sidebar Gradient Animation - Cool Blue/Teal Theme */
+.sidebar-custom {
+    /* Removed Pink/Orange. Used: Blue, Indige, Teal, Cyan */
+    background: linear-gradient(-45deg, #1a2980, #26d0ce, #4e54c8, #23d5ab);
+    background-size: 400% 400%;
+    background-attachment: fixed;
+    /* Seamless blend with navbar */
+    animation: gradientSidebar 15s ease infinite;
+    height: 100vh;
+    /* Fixed Height */
+    width: 250px;
+    /* Custom Width */
+    position: fixed;
+    /* Fixed position */
+    top: 0;
+    bottom: 0;
+    left: 0;
+    overflow-y: auto;
+    /* Allow scroll if needed but hide bar */
+    box-shadow: 4px 0 15px rgba(0, 0, 0, 0.1);
+    scrollbar-width: none;
+    /* Hide scrollbar Firefox */
+    -ms-overflow-style: none;
+    /* Hide scrollbar IE/Edge */
+    z-index: 1000;
+}
+
+/* Dark Mode Sidebar - Deep Space/Midnight Gradient */
+body.dark-mode .sidebar-custom {
+    background: linear-gradient(-45deg, #0f2027, #203a43, #2c5364, #141e30);
+    /* Vibrant Dark Gradient: Deep Purple -> Navy -> Dark Teal */
+    background: linear-gradient(-45deg, #0f0c29, #302b63, #24243e, #0f2027);
+    background-size: 400% 400%;
+    /* Re-declare animation to ensure it picks up the new background size if needed, though inherited should work. */
+    animation: gradientSidebar 15s ease infinite;
+    border-right: 1px solid rgba(255, 255, 255, 0.05);
+    /* Subtle separator */
+}
+
+/* Adjust text colors for dark mode if needed (already white/light in base) */
+body.dark-mode .sidebar-custom .nav-link {
+    color: rgba(255, 255, 255, 0.75) !important;
+}
+
+body.dark-mode .sidebar-custom .nav-link:hover,
+body.dark-mode .sidebar-custom .nav-link.active {
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: inset 5px 0 10px rgba(0, 0, 0, 0.2);
+    border-right-color: rgba(255, 255, 255, 0.5);
+}
+
+@keyframes gradientSidebar {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Full Width & Hover Effects */
+.sidebar-custom .nav-link {
+    color: rgba(255, 255, 255, 0.85) !important;
+    padding: 15px 25px;
+    margin: 2px 0;
+    border-radius: 0;
+    /* Full Width */
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    position: relative;
+    overflow: hidden;
+    border-right: 4px solid transparent;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+}
+
+/* Icon styling */
+.sidebar-custom .nav-link i {
+    width: 30px;
+    font-size: 1.1rem;
+    transition: transform 0.3s;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Hover State */
+.sidebar-custom .nav-link:hover {
+    background: rgba(255, 255, 255, 0.15);
+    /* Glass effect */
+    color: #fff !important;
+    border-right: 4px solid rgba(255, 255, 255, 0.8);
+    padding-left: 30px;
+    /* Slide effect */
+    backdrop-filter: blur(5px);
+}
+
+.sidebar-custom .nav-link:hover i {
+    transform: scale(1.2) rotate(5deg);
+}
+
+/* Active State */
+.sidebar-custom .nav-link.active {
+    background: rgba(255, 255, 255, 0.25);
+    color: #fff !important;
+    font-weight: 700;
+    border-right: 4px solid #fff;
+    box-shadow: inset 5px 0 10px rgba(0, 0, 0, 0.05);
+}

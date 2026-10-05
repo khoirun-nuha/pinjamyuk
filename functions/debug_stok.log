@@ -1,0 +1,94 @@
+[2026-01-29 08:12:09] Action: terima_kembali triggered.
+[2026-01-29 08:12:09] POST DATA: Array
+(
+    [id_peminjaman] => 16
+    [tgl_rencana] => 2026-01-28
+    [terima_kembali] => 1
+)
+
+[2026-01-29 08:12:09] Denda Logic: Item(2) * Tarif(2000) * Hari(1) = 4000
+[2026-01-29 08:12:09] Calculated Denda: 4000
+[2026-01-29 08:12:09] START proses_kembali (Trigger Mode) ID: 16
+[2026-01-29 08:12:09] Update status SUCCESS. Trigger should have fired.
+[2026-01-29 09:01:27] Action: terima_kembali triggered.
+[2026-01-29 09:01:27] POST DATA: Array
+(
+    [id_peminjaman] => 17
+    [tgl_rencana] => 2026-02-28
+    [terima_kembali] => 1
+)
+
+[2026-01-29 09:01:27] Calculated Denda: 0
+[2026-01-29 09:01:27] START proses_kembali (Trigger Mode) ID: 17
+[2026-01-29 09:01:27] Update status SUCCESS. Trigger should have fired.
+[2026-01-30 11:49:02] Action: terima_kembali triggered.
+[2026-01-30 11:49:02] POST DATA: Array
+(
+    [id_peminjaman] => 18
+    [tgl_rencana] => 2026-01-30
+    [terima_kembali] => 1
+)
+
+[2026-01-30 11:49:02] Denda Logic: Item(2) * Tarif(2000) * Hari(0) = 0
+[2026-01-30 11:49:02] Calculated Denda: 0
+[2026-01-30 11:49:02] START proses_kembali (Trigger Mode) ID: 18
+[2026-01-30 11:49:02] Update status SUCCESS. Trigger should have fired.
+[2026-01-30 18:00:54] Action: terima_kembali triggered.
+[2026-01-30 18:00:54] POST DATA: Array
+(
+    [id_peminjaman] => 19
+    [tgl_rencana] => 2026-01-30
+    [terima_kembali] => 1
+)
+
+[2026-01-30 18:00:54] Denda Logic: Item(1) * Tarif(2000) * Hari(0) = 0
+[2026-01-30 18:00:54] Calculated Denda: 0
+[2026-01-30 18:00:54] START proses_kembali (Trigger Mode) ID: 19
+[2026-01-30 18:00:54] Update status SUCCESS. Trigger should have fired.
+[2026-01-31 13:22:59] Action: terima_kembali triggered.
+[2026-01-31 13:23:00] POST DATA: Array
+(
+    [id_peminjaman] => 21
+    [tgl_rencana] => 2026-01-31
+    [terima_kembali] => 1
+)
+
+[2026-01-31 13:23:00] Denda Logic: Item(1) * Tarif(2000) * Hari(0) = 0
+[2026-01-31 13:23:00] Calculated Denda: 0
+[2026-01-31 13:23:00] START proses_kembali (Trigger Mode) ID: 21
+[2026-01-31 13:23:00] Update status SUCCESS. Trigger should have fired.
+[2026-01-31 13:26:58] Action: terima_kembali triggered.
+[2026-01-31 13:26:58] POST DATA: Array
+(
+    [id_peminjaman] => 21
+    [tgl_rencana] => 2026-01-31
+    [terima_kembali] => 1
+)
+
+[2026-01-31 13:26:58] Denda Logic: Item(1) * Tarif(2000) * Hari(0) = 0
+[2026-01-31 13:26:58] Calculated Denda: 0
+[2026-01-31 13:26:58] START proses_kembali (Trigger Mode) ID: 21
+[2026-01-31 13:26:58] Update status SUCCESS. Trigger should have fired.
+[2026-01-31 13:53:55] Action: terima_kembali triggered.
+[2026-01-31 13:53:55] POST DATA: Array
+(
+    [id_peminjaman] => 25
+    [tgl_rencana] => 2026-01-31
+    [terima_kembali] => 1
+)
+
+[2026-01-31 13:53:55] Denda Logic: Item(9) * Tarif(2000) * Hari(0) = 0
+[2026-01-31 13:53:55] Calculated Denda: 0
+[2026-01-31 13:53:55] START proses_kembali (Trigger Mode) ID: 25
+[2026-01-31 13:53:55] Update status SUCCESS. Trigger should have fired.
+[2026-02-01 23:25:14] Action: terima_kembali triggered.
+[2026-02-01 23:25:14] POST DATA: Array
+(
+    [id_peminjaman] => 31
+    [tgl_rencana] => 2026-02-08
+    [terima_kembali] => 1
+)
+
+[2026-02-01 23:25:14] Calculated Denda: 0
+[2026-02-01 23:25:14] START proses_kembali (Trigger Mode) ID: 31
+[2026-02-01 23:25:14] Update status SUCCESS. Trigger should have fired.

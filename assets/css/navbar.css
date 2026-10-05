@@ -1,0 +1,32 @@
+/* Navbar Styles */
+.navbar-theme {
+    background: rgba(255, 255, 255, 0.95);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    /* Garis hitam tipis (subtle) */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.02);
+}
+
+.nav-icon-btn {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: #555;
+    transition: all 0.2s;
+    background: transparent;
+    border: none;
+}
+
+.nav-icon-btn:hover {
+    background: rgba(0, 0, 0, 0.05);
+    color: #000;
+    transform: scale(1.1);
+}
+
+#sidebarToggle {
+    display: flex !important;
+    z-index: 1002;
+    cursor: pointer;
+}
